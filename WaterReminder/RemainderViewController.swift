@@ -27,6 +27,7 @@ class RemainderViewController: UIViewController {
         
         self.view.endEditing(true)
     }
+    
 }
 //MARK: - UITableViewDelegate
 extension RemainderViewController: UITableViewDelegate, UITableViewDataSource {
@@ -105,5 +106,11 @@ extension RemainderViewController: UITextFieldDelegate {
 func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {
     print("==EndEditing== \(textField.tag)")
     if textField.tag == 0 {
+    }
+    if textField.tag == 1 {
+        
+    }
+    if textField.tag == 2 {
+        
     }
 }

@@ -19,6 +19,9 @@
 		3B1DE569251B124E00397093 /* CalculationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DE568251B124E00397093 /* CalculationViewController.swift */; };
 		3B1DE56B251B126700397093 /* RemainderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DE56A251B126700397093 /* RemainderViewController.swift */; };
 		3B1DE56D251B197F00397093 /* RemainderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B1DE56C251B197F00397093 /* RemainderTableViewCell.swift */; };
+		3BD74E9D251DAB8C0083CBA0 /* CalculationTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD74E9C251DAB8C0083CBA0 /* CalculationTableViewCell.swift */; };
+		3BD74E9F251E09EA0083CBA0 /* CalculationTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD74E9E251E09EA0083CBA0 /* CalculationTableViewController.swift */; };
+		3BD74EA1251E12840083CBA0 /* RemainderTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BD74EA0251E12840083CBA0 /* RemainderTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,9 @@
 		3B1DE568251B124E00397093 /* CalculationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationViewController.swift; sourceTree = "<group>"; };
 		3B1DE56A251B126700397093 /* RemainderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainderViewController.swift; sourceTree = "<group>"; };
 		3B1DE56C251B197F00397093 /* RemainderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainderTableViewCell.swift; sourceTree = "<group>"; };
+		3BD74E9C251DAB8C0083CBA0 /* CalculationTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationTableViewCell.swift; sourceTree = "<group>"; };
+		3BD74E9E251E09EA0083CBA0 /* CalculationTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculationTableViewController.swift; sourceTree = "<group>"; };
+		3BD74EA0251E12840083CBA0 /* RemainderTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemainderTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +118,10 @@
 				3B0D74DC2519FCA10035B866 /* HomeViewController.swift */,
 				3B1DE566251B123C00397093 /* HistoryViewController.swift */,
 				3B1DE568251B124E00397093 /* CalculationViewController.swift */,
+				3BD74E9E251E09EA0083CBA0 /* CalculationTableViewController.swift */,
+				3BD74E9C251DAB8C0083CBA0 /* CalculationTableViewCell.swift */,
 				3B1DE56A251B126700397093 /* RemainderViewController.swift */,
+				3BD74EA0251E12840083CBA0 /* RemainderTableViewController.swift */,
 				3B1DE56C251B197F00397093 /* RemainderTableViewCell.swift */,
 				3B0D74DE2519FCA10035B866 /* Main.storyboard */,
 				3B0D74E12519FCB90035B866 /* Assets.xcassets */,
@@ -273,9 +282,12 @@
 			files = (
 				3B0D74DD2519FCA10035B866 /* HomeViewController.swift in Sources */,
 				3B1DE569251B124E00397093 /* CalculationViewController.swift in Sources */,
+				3BD74E9F251E09EA0083CBA0 /* CalculationTableViewController.swift in Sources */,
 				3B0D74D92519FCA10035B866 /* AppDelegate.swift in Sources */,
+				3BD74E9D251DAB8C0083CBA0 /* CalculationTableViewCell.swift in Sources */,
 				3B0D74DB2519FCA10035B866 /* SceneDelegate.swift in Sources */,
 				3B1DE56B251B126700397093 /* RemainderViewController.swift in Sources */,
+				3BD74EA1251E12840083CBA0 /* RemainderTableViewController.swift in Sources */,
 				3B1DE567251B123C00397093 /* HistoryViewController.swift in Sources */,
 				3B1DE56D251B197F00397093 /* RemainderTableViewCell.swift in Sources */,
 			);
