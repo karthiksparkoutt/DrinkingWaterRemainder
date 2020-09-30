@@ -1,24 +1,24 @@
 //
 //  ViewController.swift
-//  WaterReminder
+//  WaterRemainder
 //
-//  Created by Karthik Rajan T  on 22/09/20.
+//  Created by Karthik Rajan T  on 27/09/20.
 //  Copyright © 2020 Karthik Rajan T . All rights reserved.
 //
 
 import UIKit
 
-class HomeViewController: UIViewController {
-    @IBOutlet weak var drinkwaterButton: UIButton!
-    
+class ViewController: UIViewController {
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Do any additional setup after loading the view.
     }
-    
-    @IBAction func drinkWaterButtonTap(_ sender: UIButton) {
+
+
+    @IBAction func tapOnDrinkWaterButton(_ sender: UIButton) {
         let vc = self.storyboard?.instantiateViewController(withIdentifier: "CalculationViewController") as! CalculationViewController
-        self.present(vc, animated: true, completion: nil)
-        
+            self.present(vc, animated: true, completion: nil)
     }
-    
 }
+

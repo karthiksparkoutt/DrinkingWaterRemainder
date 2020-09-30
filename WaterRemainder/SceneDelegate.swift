@@ -1,8 +1,8 @@
 //
 //  SceneDelegate.swift
-//  WaterReminder
+//  WaterRemainder
 //
-//  Created by Karthik Rajan T  on 22/09/20.
+//  Created by Karthik Rajan T  on 27/09/20.
 //  Copyright © 2020 Karthik Rajan T . All rights reserved.
 //
 

@@ -1,15 +1,15 @@
 //
-//  WaterReminderTests.swift
-//  WaterReminderTests
+//  WaterRemainderTests.swift
+//  WaterRemainderTests
 //
-//  Created by Karthik Rajan T  on 22/09/20.
+//  Created by Karthik Rajan T  on 27/09/20.
 //  Copyright © 2020 Karthik Rajan T . All rights reserved.
 //
 
 import XCTest
-@testable import WaterReminder
+@testable import WaterRemainder
 
-class WaterReminderTests: XCTestCase {
+class WaterRemainderTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.
