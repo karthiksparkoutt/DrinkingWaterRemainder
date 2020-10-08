@@ -16,12 +16,18 @@ class CalculationViewController: UIViewController {
     var weightValue = ""
     var qualityValue = ""
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    fileprivate func extractedFunc() {
         calculationTableView.delegate = self
         calculationTableView.dataSource = self
+        self.calculationTableView.rowHeight = UITableView.automaticDimension
+        self.calculationTableView.estimatedRowHeight = 200.0
         headerTitles = ["YOUR WEIGHT IS", "SUGGEST QUANTITY OF WATER"]
         fooderTitles = ["This is a suggestion. It is always good to ask your doctor the right quality for you"]
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        extractedFunc()
     }
     
     @IBAction func tapOnSettingButton(_ sender: Any) {
@@ -60,11 +66,22 @@ extension CalculationViewController: UITableViewDelegate, UITableViewDataSource 
         let headerView = UIView()
         let headerCell = tableView.dequeueReusableCell(withIdentifier: "Cell") as! CalculationTableViewCell
         headerView.addSubview(headerCell)
-        headerCell.backgroundColor = UIColor.red
+        headerCell.backgroundColor = UIColor.lightGray
         return headerView
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 35
+        if indexPath.section == 0 {
+            return UITableView.automaticDimension
+        } else {
+            return 40
+        }
+    }
+    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.section == 0 {
+            return UITableView.automaticDimension
+        } else {
+            return 40
+        }
     }
 }

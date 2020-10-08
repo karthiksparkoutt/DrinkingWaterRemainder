@@ -18,13 +18,17 @@ class RemainderViewController: UIViewController {
     var secondSectionData : [String] = []
     var section : Int = 0
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
+    fileprivate func extractedFunc() {
         remaindOne = ["Notification"]
         remaindTwo = ["I wake up at", "I go to bed at", "Interval between notification"]
         remaindThree = ["alert Sound"]
         self.firstSectionData.append("MacBook")
         self.secondSectionData.append("Dell Inspiron")
+    }
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        extractedFunc()
         
     }
     
@@ -49,16 +53,17 @@ extension RemainderViewController: UITableViewDelegate, UITableViewDataSource {
             cell.notificationLabel.text = "Notification"
             return cell
         }
-        else if indexPath.row == 1 {
+        if indexPath.row == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellTwo", for: indexPath) as! RemainderTableViewCell
             cell.bedTimeLabel.text = remaindTwo[indexPath.row]
             return cell
         }
-        else {
+        if indexPath.row == 2 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "CellThree", for: indexPath) as! RemainderTableViewCell
             cell.alertSoundLabel.text = "Alert Sound"
             return cell
         }
+        return UITableViewCell()
     }
     
     
